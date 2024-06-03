@@ -1,5 +1,8 @@
-import './App.css';
 import { Routes, Route } from 'react-router-dom';
+
+import './App.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
+
 import Header from './components/Header';
 import List from './components/List';
 import Detail from './components/Detail';
@@ -10,7 +13,7 @@ function App() {
     <Header />
     <Routes>
       <Route path='/react-star-wars' element={<List />} />
-      <Route path='/react-star-wars/detail' element={<Detail />} />
+      <Route path='/react-star-wars/detail/:id' element={<Detail />} />
     </Routes>
     </>
   );
