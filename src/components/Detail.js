@@ -81,11 +81,11 @@ function Detail() {
             <Link to="/react-star-wars" className="btn btn-link">Back to list</Link>
             { person ? (
                 <Row>
-                    <Col md="12" sm="12">
+                    <Col md="12" sm="12" className="margin-bottom-10">
                         <h2>{ person.name }</h2>
                     </Col>
-                    <Col md="12" sm="12">
-                        <Table striped bordered>
+                    <Col md="12" sm="12" className="margin-bottom-10">
+                        <Table striped bordered responsive>
                             <thead>
                                 <tr>
                                     <th>Gender</th>
@@ -110,7 +110,7 @@ function Detail() {
                             </tbody>
                         </Table>
                     </Col>
-                    <Col md="3" sm="6">
+                    <Col md="3" sm="6" className="margin-bottom-10">
                         <ListGroup>
                             <ListGroup.Item active>Film</ListGroup.Item>
                             { films && films.length ? films.map((item) => (
@@ -120,7 +120,7 @@ function Detail() {
                             )}
                         </ListGroup>
                     </Col>
-                    <Col md="3" sm="6">
+                    <Col md="3" sm="6" className="margin-bottom-10">
                         <ListGroup>
                             <ListGroup.Item active>Species</ListGroup.Item>
                             { species && species.length ? species.map((item) => (
@@ -130,7 +130,7 @@ function Detail() {
                             )}
                         </ListGroup>
                     </Col>
-                    <Col md="3" sm="6">
+                    <Col md="3" sm="6" className="margin-bottom-10">
                         <ListGroup>
                             <ListGroup.Item active>Starship</ListGroup.Item>
                             { starships && starships.length ? starships.map((item) => (
@@ -140,7 +140,7 @@ function Detail() {
                             )}
                         </ListGroup>
                     </Col>
-                    <Col md="3" sm="6">
+                    <Col md="3" sm="6" className="margin-bottom-10">
                         <ListGroup>
                             <ListGroup.Item active>Vehicle</ListGroup.Item>
                             { vehicles && vehicles.length ? vehicles.map((item) => (

@@ -50,7 +50,7 @@ function List() {
             { !loading && people ? (
                 <Row>
                     { people.map((item) => (
-                        <Col md="3" sm="4" key={item.url.replace(/\D/g, "")}>
+                        <Col md="3" xs="6" key={item.url.replace(/\D/g, "")}>
                             <Card className="card-margin">
                                 <Card.Body>
                                     <Card.Title className="card-title">{ item.name }</Card.Title>
